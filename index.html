@@ -1,94 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">My Portfolio</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Header / Hero -->
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Hi, I'm Saim Shoukat</h1>
-                <p class="tagline">Frontend Development & Oracle Apex Development</p>
-                <p class="bio">
-                    I am learning web development and love designing modern, clean user interfaces.
-                    This is my mini portfolio built using only HTML and CSS.
-                </p>
-                <a href="#projects" class="btn primary-btn">View My Projects</a>
-            </div>
+  <main>
+    <!-- About / Hero section -->
+    <section id="about" class="hero">
+      <div class="hero-text">
+        <h1>Malik Saim Shoukat</h1>
+        <p>
+          I am a passionate graphic designer currently working in study visa consultancy.
+          I create social media posts and clean layouts, and I am learning web development
+          to build fully responsive websites and improve my digital skills.
+        </p>
+      </div>
+      <div class="hero-image">
+        <!-- yahan apni image ka real file name lagana -->
+        <img src="me.jpg" alt="Malik Saim Shoukat" />
+      </div>
+    </section>
 
-            <figure class="hero-photo">
-                <img src="me.jpg" alt="Photo of Your Name">
-            </figure>
-        </div>
-    </header>
+    <!-- Projects section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>A personal portfolio built with HTML, CSS, and Flexbox. Fully responsive for mobile, tablet, and desktop screens.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 2</h3>
+          <p>A JavaScript app to add, edit, and delete tasks. Saves tasks in localStorage and shows an empty-list message.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 3</h3>
+          <p>A simple React app that shows live weather of any city using API data. Includes search, loading, and error handling.</p>
+        </article>
+      </div>
+    </section>
 
-    <!-- Main content -->
-    <main>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <article class="project-card">
-                        <h3>Project One</h3>
-                        <p>A simple landing page design using HTML and CSS, focused on clean layout.</p>
-                        <button class="btn secondary-btn">View Details</button>
-                    </article>
-
-                    <article class="project-card">
-                        <h3>Project Two</h3>
-                        <p>A basic portfolio concept with responsive layout using Flexbox.</p>
-                        <button class="btn secondary-btn">View Details</button>
-                    </article>
-
-                    <article class="project-card">
-                        <h3>Project Three</h3>
-                        <p>A modern login page UI with gradients, card layout, and hover animations.</p>
-                        <button class="btn secondary-btn">View Details</button>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form class="contact-form">
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" placeholder="Your Name" required>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="you@example.com" required>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>
+          Name
+          <input type="text" placeholder="Enter your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="Enter your email" />
+        </label>
+        <label>
+          Message
+          <textarea rows="4" placeholder="Write your message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

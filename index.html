@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web page Design</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">PraRoz</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <Li><a href="#">Home</a></Li>
-                    <Li><a href="#">About</a></Li>
-                    <Li><a href="#">SERVICES</a></Li>
-                    <Li><a href="#">DESIGN</a></Li>
-                    <Li><a href="#">CONTACT</a></Li>
 
+    <!-- Header / Hero -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Saim Shoukat</h1>
+                <p class="tagline">Frontend Development & Oracle Apex Development</p>
+                <p class="bio">
+                    I am learning web development and love designing modern, clean user interfaces.
+                    This is my mini portfolio built using only HTML and CSS.
+                </p>
+                <a href="#projects" class="btn primary-btn">View My Projects</a>
+            </div>
 
-                </ul>
-            </div>
-            <div class="search">
-                <input  type="search" class="srch" name="" placeholder="TYPE TO TEXT">
-                <a href="#"><button class="btn">Search</button></a>
-</div>
-            </div>
-             <div class="content">
-                <h1>Web Design & <br><span>Development</span><br>Course</h1>
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem <br>exercitationem ratione tempore deleniti iure est dolorem sapiente<br> quae a expedita nulla vitae assumenda iste culpa, sed eos similique aperiam.</p>
-                <button class="cn"><a href="#">JOIN US</a></button>
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="" placeholder="Enter Password Here">
-                    <button class="btnn"><a href="#">Login</a></button>
-                    <p class="link"> Don`t have an Acount<br>
-                    <a href="#">Sin up</a> here</p>
-                    <p class="liw">Log in with</p>
-             <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                </div>
-
-            </div>
-               </div>
-             </div>
+            <figure class="hero-photo">
+                <img src="me.jpg" alt="Photo of Your Name">
+            </figure>
         </div>
-    </div>
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Project One</h3>
+                        <p>A simple landing page design using HTML and CSS, focused on clean layout.</p>
+                        <button class="btn secondary-btn">View Details</button>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Project Two</h3>
+                        <p>A basic portfolio concept with responsive layout using Flexbox.</p>
+                        <button class="btn secondary-btn">View Details</button>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Project Three</h3>
+                        <p>A modern login page UI with gradients, card layout, and hover animations.</p>
+                        <button class="btn secondary-btn">View Details</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

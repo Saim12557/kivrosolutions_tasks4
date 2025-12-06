@@ -1,76 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">My Portfolio</div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do List<img src="images/icon.png" alt="" ></h2>
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="Add your Text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
 
-  <main>
-    <!-- About / Hero section -->
-    <section id="about" class="hero">
-      <div class="hero-text">
-        <h1>Malik Saim Shoukat</h1>
-        <p>
-          I am a passionate graphic designer currently working in study visa consultancy.
-          I create social media posts and clean layouts, and I am learning web development
-          to build fully responsive websites and improve my digital skills.
-        </p>
-      </div>
-      <div class="hero-image">
-        <!-- yahan apni image ka real file name lagana -->
-        <img src="me.jpg" alt="Malik Saim Shoukat" />
-      </div>
-    </section>
-
-    <!-- Projects section -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Project 1</h3>
-          <p>A personal portfolio built with HTML, CSS, and Flexbox. Fully responsive for mobile, tablet, and desktop screens.</p>
-        </article>
-        <article class="project-card">
-          <h3>Project 2</h3>
-          <p>A JavaScript app to add, edit, and delete tasks. Saves tasks in localStorage and shows an empty-list message.</p>
-        </article>
-        <article class="project-card">
-          <h3>Project 3</h3>
-          <p>A simple React app that shows live weather of any city using API data. Includes search, loading, and error handling.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label>
-          Name
-          <input type="text" placeholder="Enter your name" />
-        </label>
-        <label>
-          Email
-          <input type="email" placeholder="Enter your email" />
-        </label>
-        <label>
-          Message
-          <textarea rows="4" placeholder="Write your message"></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
